@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+
+'use strict'
+
+/**
+ * Module dependencies
+ */
+
+const chalk = require('chalk')
+const ips = require('..')
+
+const argv = require('minimist')(process.argv.slice(2), {
+  boolean: ['v6'],
+  alias: {
+    '6': 'v6'
+  },
+  default: {
+    v6: false
+  }
+})
+
+if(argv.v6) {
+  console.log(ips.v6)
+} else {
+  console.log(ips.v4)
+}

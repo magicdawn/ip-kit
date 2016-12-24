@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "simple ip utility",
   "main": "index.js",
+  "bin": {
+    "ip": "bin/ip"
+  },
   "scripts": {
     "test": "mocha",
     "test-cover": "istanbul cover _mocha -- -u exports",
