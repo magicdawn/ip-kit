@@ -8,6 +8,7 @@
 
 const chalk = require('chalk')
 const ips = require('..')
+const clip = require('clipboardy')
 
 const argv = require('minimist')(process.argv.slice(2), {
   boolean: ['v6'],
@@ -19,8 +20,15 @@ const argv = require('minimist')(process.argv.slice(2), {
   }
 })
 
+let result
 if(argv.v6) {
-  console.log(ips.v6)
+  result = ips.v6
 } else {
-  console.log(ips.v4)
+  result = ips.v4
 }
+
+// log
+console.log(result)
+
+// copy
+clip.writeSync(result)
