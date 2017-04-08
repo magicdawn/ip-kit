@@ -1,4 +1,6 @@
 # ip-kit
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/magicdawn/ip-kit.svg)](https://greenkeeper.io/)
 > simple ip utility
 
 [![Build Status](https://img.shields.io/travis/magicdawn/ip-kit.svg?style=flat-square)](https://travis-ci.org/magicdawn/ip-kit)
